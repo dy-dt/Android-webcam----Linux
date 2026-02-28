@@ -8,6 +8,11 @@ clone the repo: `git clone https://github.com/dy-dt/Android-webcam----Linux.git`
 Install all dependencies `./setupWebcam.sh`
 Then when you want to run the webcam run `./webcam.sh`
 
+You will need to enable dev tools on your android phone. You will need to enable usb debugging and give consent for the computer to connect to your phone (for usb debugging).
+
+
+
+
 By default the program uses camera 1 from your phone. This can be edited in webcam.sh or provided as the first arg.
 You can check the id's of the your cameras with `scrcpy --list-cameras`
 
@@ -17,3 +22,5 @@ Due to this relying on a virual camera device the first time you run webcam.sh p
 
 For any other customisations or more information reference the scrcpy github.
 
+## Common issues
+scrcpy not found: It is likely the install failed somewhere. run scrcpy/install_release.sh from within the repo. 
